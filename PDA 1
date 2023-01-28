@@ -1,1 +1,71 @@
-creating PDA using simulator
+Automaton Simulator, v1.0
+dpda {
+	alphabet {abcd*}
+	state {
+		initial {yes}
+		coord {392 260}
+	}
+	state {
+		coord {652 260}
+	}
+	state {
+		final {yes}
+		coord {900 261}
+	}
+	edge 0 1 {
+		transits {b}
+		offset {0.5235987755982988}
+		stacktop {a}
+		action {pop}
+	}
+	edge 1 1 {
+		transits {b}
+		offset {-1.7359450042095235}
+		stacktop {a}
+		action {pop}
+	}
+	edge 1 2 {
+		transits {*}
+		offset {0.5235987755982988}
+	}
+	edge 0 0 {
+		transits {a}
+		offset {2.462587344891249}
+		action {push a}
+	}
+	label {
+		text {q0}
+		font {SansSerif 12 -}
+		coord {385 264}
+	}
+	label {
+		text {}
+		font {SansSerif 12 -}
+		coord {643 265}
+	}
+	label {
+		text {q1}
+		font {SansSerif 12 -}
+		coord {643 265}
+	}
+	label {
+		text {}
+		font {SansSerif 12 -}
+		coord {894 266}
+	}
+	label {
+		text {q2}
+		font {SansSerif 12 -}
+		coord {894 266}
+	}
+	label {
+		text {}
+		font {SansSerif 12 -}
+		coord {900 275}
+	}
+	label {
+		text {}
+		font {SansSerif 12 -}
+		coord {380 228}
+	}
+}
